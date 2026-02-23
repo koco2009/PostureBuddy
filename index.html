@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poster Buddy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1e3c72);
+    background-size:400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color:white;
+    overflow-x:hidden;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Navbar */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+}
+
+.logo{
+    font-weight:800;
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#00c6ff;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    opacity:0.9;
+    margin-bottom:40px;
+}
+
+.hero span{
+    color:#00c6ff;
+}
+
+.btn{
+    padding:15px 35px;
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    border:none;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    text-decoration:none;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px rgba(0,198,255,0.7);
+}
+
+/* Features */
+.features{
+    padding:100px 10%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:25px;
+    width:280px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00c6ff;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.3);
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo">Poster Buddy</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="valentine.html">Valentine 💖</a>
+    </div>
+</div>
+
+<section class="hero">
+    <h1>Together We Make <span>Everyone Stand Straight</span></h1>
+    <p>Premium posture posters designed to inspire better alignment and confidence.</p>
+    <a href="valentine.html" class="btn">View Valentine's Collaboration</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>✔ Premium Designs</h3>
+        <p>Modern aesthetic posters crafted to improve posture awareness.</p>
+    </div>
+    <div class="card">
+        <h3>✔ Science-Based</h3>
+        <p>Designed with posture principles that promote healthy alignment.</p>
+    </div>
+    <div class="card">
+        <h3>✔ Loved Worldwide</h3>
+        <p>Helping thousands build better posture and confidence daily.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Poster Buddy. Together we stand straight.
+</footer>
+
+</body>
+</html>
